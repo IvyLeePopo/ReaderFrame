@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1119</width>
+    <height>605</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLineEdit" name="le_path">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>40</y>
+      <width>171</width>
+      <height>26</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_openReader">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>40</y>
+      <width>121</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>打开读卡器</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_readCard">
+    <property name="geometry">
+     <rect>
+      <x>530</x>
+      <y>40</y>
+      <width>121</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>读CPC/CPU卡</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbl_comName">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>40</y>
+      <width>151</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>读卡器IP或串口号</string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="textEdit">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>120</y>
+      <width>761</width>
+      <height>451</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Microsoft YaHei</family>
+     </font>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_clear">
+    <property name="geometry">
+     <rect>
+      <x>790</x>
+      <y>40</y>
+      <width>121</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>清屏</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_etcTrade">
+    <property name="geometry">
+     <rect>
+      <x>660</x>
+      <y>40</y>
+      <width>121</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>ETC卡消费</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_openTwoReader">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>80</y>
+      <width>121</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>打开COM1/COM2</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbl_succ">
+    <property name="geometry">
+     <rect>
+      <x>920</x>
+      <y>160</y>
+      <width>54</width>
+      <height>12</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>成功</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbl_fail">
+    <property name="geometry">
+     <rect>
+      <x>1000</x>
+      <y>160</y>
+      <width>54</width>
+      <height>12</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>失败</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbl_com1">
+    <property name="geometry">
+     <rect>
+      <x>840</x>
+      <y>200</y>
+      <width>54</width>
+      <height>12</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>COM1</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbl_com2">
+    <property name="geometry">
+     <rect>
+      <x>840</x>
+      <y>250</y>
+      <width>54</width>
+      <height>12</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>COM2</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbl_com1Succ">
+    <property name="geometry">
+     <rect>
+      <x>920</x>
+      <y>200</y>
+      <width>54</width>
+      <height>12</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbl_com1Fail">
+    <property name="geometry">
+     <rect>
+      <x>1000</x>
+      <y>200</y>
+      <width>54</width>
+      <height>12</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbl_com2Fail">
+    <property name="geometry">
+     <rect>
+      <x>1000</x>
+      <y>250</y>
+      <width>54</width>
+      <height>12</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbl_com2Succ">
+    <property name="geometry">
+     <rect>
+      <x>920</x>
+      <y>250</y>
+      <width>54</width>
+      <height>12</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="gb_stats">
+    <property name="geometry">
+     <rect>
+      <x>830</x>
+      <y>130</y>
+      <width>241</width>
+      <height>151</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>结果统计</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_etcTradeLoop">
+    <property name="geometry">
+     <rect>
+      <x>530</x>
+      <y>80</y>
+      <width>121</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>上下工位循环ETC消费</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_stopTradeLoop">
+    <property name="geometry">
+     <rect>
+      <x>660</x>
+      <y>80</y>
+      <width>121</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>停止循环</string>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="gb_stats_2">
+    <property name="geometry">
+     <rect>
+      <x>830</x>
+      <y>320</y>
+      <width>251</width>
+      <height>231</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Test</string>
+    </property>
+    <widget class="QPushButton" name="btn_openReaderSingle">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>50</y>
+       <width>121</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>OpenReader</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btn_samCommand">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>130</y>
+       <width>121</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>SamCommand</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btn_samReset">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>90</y>
+       <width>121</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>SamReset</string>
+     </property>
+    </widget>
+   </widget>
+   <zorder>gb_stats</zorder>
+   <zorder>le_path</zorder>
+   <zorder>btn_openReader</zorder>
+   <zorder>btn_readCard</zorder>
+   <zorder>lbl_comName</zorder>
+   <zorder>textEdit</zorder>
+   <zorder>btn_clear</zorder>
+   <zorder>btn_etcTrade</zorder>
+   <zorder>btn_openTwoReader</zorder>
+   <zorder>lbl_succ</zorder>
+   <zorder>lbl_fail</zorder>
+   <zorder>lbl_com1</zorder>
+   <zorder>lbl_com2</zorder>
+   <zorder>lbl_com1Succ</zorder>
+   <zorder>lbl_com1Fail</zorder>
+   <zorder>lbl_com2Fail</zorder>
+   <zorder>lbl_com2Succ</zorder>
+   <zorder>btn_etcTradeLoop</zorder>
+   <zorder>btn_stopTradeLoop</zorder>
+   <zorder>gb_stats_2</zorder>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
